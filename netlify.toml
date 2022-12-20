@@ -1,3 +1,9 @@
 [build]
   publish = "_site"
   command = "npm run build"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Test-Header-Toml = "Success"
+    Access-Control-Allow-Origin = "*"
